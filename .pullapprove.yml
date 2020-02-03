@@ -14,10 +14,4 @@ reviewers:
   required: 1
   conditions:
     files:
-     - ".pullapprove.yml"
-     - "*.png"
-     - "*.gif"
-     - "*.md"
-     - "*.jpg"
-     - "*.pub"
-     - "*.yml"
+     - "*"
