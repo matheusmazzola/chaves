@@ -3,15 +3,21 @@ approve_regex: ^Approved
 reject_regex: ^Rejected
 reset_on_push: false
 reviewers:
- -   
-  name: admin  
-  members:  
-  - carlossuperlogica
-  - luiscera
-  - jhoncf
-  - jeanrodrigues
-  - matheusmazzola
-  required: 1
-  conditions:
-    files:
-     - "docs/*"
+
+    -
+        name: admin
+        required: 1
+        members:
+            - carlossuperlogica
+            - luiscera
+            - jhoncf
+            - jeanrodrigues
+            - matheusmazzola
+        conditions:
+            files:
+              exclude:
+                - "*.php"
+                - "*.js"
+                - "side-projects/*"
+                - "*.md"
+                - "*.pub"
