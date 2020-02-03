@@ -14,4 +14,4 @@ reviewers:
   required: 1
   conditions:
     files:
-     - *
+     - '*.*'
