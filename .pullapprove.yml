@@ -3,13 +3,21 @@ approve_regex: ^Approved
 reject_regex: ^Rejected
 reset_on_push: false
 reviewers:
-
-    -
-        name: admin
-        required: 1
-        members:
-            - carlossuperlogica
-            - luiscera
-            - jhoncf
-            - jeanrodrigues
-            - matheusmazzola
+ -   
+  name: admin  
+  members:  
+  - carlossuperlogica
+  - luiscera
+  - jhoncf
+  - jeanrodrigues
+  - matheusmazzola
+  required: 1
+  conditions:
+    files:
+     - ".pullapprove.yml"
+     - "*.png"
+     - "*.gif"
+     - "*.md"
+     - "*.jpg"
+     - "*.pub"
+     - "*.yml"
